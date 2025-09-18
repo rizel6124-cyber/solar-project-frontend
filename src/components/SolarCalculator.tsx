@@ -76,7 +76,7 @@ const SolarCalculator = () => {
     {
       icon: DollarSign,
       title: "Save Money",
-      desc: "Reduce bills by up to 90%",
+      desc: "Reduce bills by 100%",
       gradient: "from-green-500 to-emerald-600",
     },
     {
@@ -250,11 +250,11 @@ const SolarCalculator = () => {
                     </div>
 
                     {/* Trust Indicators */}
-                    <div className="text-center pt-4 border-t border-gray-700/50">
+                    {/* <div className="text-center pt-4 border-t border-gray-700/50">
                       <p className="text-gray-400 text-xs leading-relaxed">
                         ✨ Personalized solutions • Zero down payment • 25-year warranty
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -301,7 +301,7 @@ const SolarCalculator = () => {
                     <div className="text-xs text-gray-600 leading-tight">Year Warranty</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-2xl font-bold text-orange-600">90%</div>
+                    <div className="text-2xl font-bold text-orange-600">upto 100%</div>
                     <div className="text-xs text-gray-600 leading-tight">Bill Reduction</div>
                   </div>
                 </div>

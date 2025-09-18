@@ -87,14 +87,14 @@ const Footer = () => {
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-2xl font-bold text-primary">₹78K</div>
-              <div className="text-sm text-white/70">Max Subsidy</div>
+              <div className="text-sm text-white/70">Central Subsidy</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-primary">900+</div>
               <div className="text-sm text-white/70">PMSGY Projects</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-primary">Top 10</div>
+              <div className="text-2xl font-bold text-primary">Among Top </div>
               <div className="text-sm text-white/70">Vendor in Rajasthan</div>
             </div>
             <div>

@@ -79,7 +79,7 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">PMSGY Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">Top 10</div>
+                  <div className="text-3xl font-bold text-primary mb-2">Top </div>
                   <div className="text-sm text-muted-foreground">Vendor in Rajasthan</div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const About = () => {
                   "Among Top 10 solar vendors in Rajasthan", 
                   "Top vendor in AVVNL network",
                   "900+ successful PMSGY installations",
-                  "₹78,000 maximum subsidy processing"
+                  "₹78,000 central government subsidy processing"
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>

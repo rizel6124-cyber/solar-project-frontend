@@ -146,7 +146,7 @@ const Hero = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full backdrop-blur-sm">
               <Award className="w-4 h-4 text-orange-400" />
               <span className="text-orange-300 text-sm font-medium">
-                #10 Solar Provider in India
+                Among Top Solar Provider in India
               </span>
             </div>
 
@@ -284,7 +284,7 @@ const Hero = () => {
                     <DollarSign className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-bold text-xl">Save up to 90%</div>
+                    <div className="font-bold text-xl">Save upto 100%</div>
                     <div className="text-sm text-orange-100">
                       on electricity bills
                     </div>
@@ -333,7 +333,7 @@ const Hero = () => {
                     {projects}+
                   </div>
                   <div className="text-gray-400 font-medium text-lg">
-                    PMKSY Projects
+                    PMSGY Projects
                   </div>
                   <div className="text-sm text-gray-500 mt-1">
                     Government Certified
@@ -354,10 +354,10 @@ const Hero = () => {
                     ₹{subsidy}K
                   </div>
                   <div className="text-gray-400 font-medium text-lg">
-                    Maximum Subsidy
+                    Central Government 
                   </div>
                   <div className="text-sm text-gray-500 mt-1">
-                    Government Support
+                    Subsidy Support
                   </div>
                 </div>
               </div>

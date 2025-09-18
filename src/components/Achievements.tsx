@@ -12,7 +12,7 @@ const Achievements = () => {
     {
       icon: <Trophy className="w-10 h-10" />,
       amount: "₹78,000",
-      title: "Maximum Subsidy",
+      title: "Central Goverment Subsidy",
       subtitle: "Under PM Surya Ghar Yojana",
       color: "from-yellow-400 to-yellow-600",
       bgColor: "from-yellow-500/20 to-yellow-600/10"
@@ -27,7 +27,7 @@ const Achievements = () => {
     },
     {
       icon: <Award className="w-10 h-10" />,
-      amount: "Top 10",
+      amount: "Among Top",
       title: "Solar Vendors",
       subtitle: "In Rajasthan state",
       color: "from-purple-400 to-purple-600",
@@ -201,9 +201,9 @@ const Achievements = () => {
         {/* Bottom Statistics Bar */}
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { label: "Years Experience", value: "10+" },
+            { label: "Years Experience", value: "5+" },
             { label: "Happy Customers", value: "2500+" },
-            { label: "MW Installed", value: "25+" },
+            { label: "Mw Installed", value: "3+" },
             { label: "Service Areas", value: "50+" }
           ].map((stat, index) => (
             <div key={index} className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">

@@ -30,7 +30,7 @@ const Products = () => {
       icon: <Home className="w-7 h-7" />,
       title: "Residential Projects",
       description: "Home rooftop installations",
-      stats: "500+ Homes Powered"
+      stats: "1500+ Homes Powered"
     },
     {
       icon: <Building className="w-7 h-7" />,

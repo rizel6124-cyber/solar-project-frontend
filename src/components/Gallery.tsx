@@ -7,27 +7,27 @@ const Gallery = () => {
   const galleryImages = [
     {
       src: "/1.jpg",
-      alt: "Large commercial solar farm installation",
-      title: "Commercial Solar Farm",
-      category: "Commercial",
-    },
-    {
-      src: "/2.jpg",
       alt: "Residential rooftop solar installation",
       title: "Residential Rooftop",
       category: "Residential",
     },
     {
+      src: "/2.jpg",
+      alt: "Industrial solar installation",
+       title: "Industrial Installation",
+       category: "Industrial",
+    },
+     {
       src: "/3.jpg",
-      alt: "Agricultural solar pumping system",
-      title: "Agricultural Solar Pump",
-      category: "Agricultural",
+      alt: "Residential rooftop solar installation",
+       title: "Residential Rooftop",
+       category: "Residential",
     },
     {
       src: "/7.jpg",
-      alt: "Industrial solar installation",
-      title: "Industrial Installation",
-      category: "Industrial",
+      alt: "Agricultural solar system",
+      title: "Farm Solar System",
+       category: "Agricultural",
     },
     {
       src: "/6.jpg",
@@ -43,9 +43,9 @@ const Gallery = () => {
     // },
     {
       src: "/5.jpg",
-      alt: "Solar panel array",
-      title: "Large Scale Installation",
-      category: "Commercial",
+        alt: "Modern solar installation",
+       title: "Modern Home Solar",
+       category: "Residential",
     },
     {
       src: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -59,12 +59,12 @@ const Gallery = () => {
       title: "Modern Home Solar",
       category: "Residential",
     },
-    {
-      src: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      alt: "Agricultural solar system",
-      title: "Farm Solar System",
-      category: "Agricultural",
-    },
+    // {
+    //   src: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    //   alt: "Agricultural solar system",
+    //   title: "Farm Solar System",
+    //   category: "Agricultural",
+    // },
   ];
 
   const categoryColors = {
@@ -134,7 +134,7 @@ const Gallery = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
 
       {/* Category Badge */}
-      <div className="absolute top-4 left-4">
+      {/* <div className="absolute top-4 left-4">
         <span
           className={`bg-gradient-to-r ${
             categoryColors[image.category]
@@ -142,7 +142,7 @@ const Gallery = () => {
         >
           {image.category}
         </span>
-      </div>
+      </div> */}
 
       {/* Zoom Icon - Center */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30 hover:scale-110">
