@@ -81,11 +81,14 @@ const Hero = () => {
     setStatus("");
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-inquiry`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/send-inquiry`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
@@ -111,9 +114,9 @@ const Hero = () => {
       className="relative overflow-hidden bg-gradient-to-br from-black via-gray-900 to-orange-950"
     >
       {/* Enhanced Animated Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         {/* Animated particles */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 pointer-events-none">
           {[...Array(25)].map((_, i) => (
             <div
               key={i}
@@ -128,10 +131,10 @@ const Hero = () => {
           ))}
         </div>
 
-        {/* Gradient orbs with improved positioning */}
-        <div className="absolute -top-32 -right-32 w-64 h-64 bg-orange-500/15 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-orange-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-32 bg-orange-500/5 rounded-full blur-2xl"></div>
+        {/* Gradient orbs */}
+        <div className="absolute -top-32 -right-32 w-64 h-64 bg-orange-500/15 rounded-full blur-3xl animate-pulse pointer-events-none"></div>
+        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-orange-400/10 rounded-full blur-3xl animate-pulse delay-1000 pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-32 bg-orange-500/5 rounded-full blur-2xl pointer-events-none"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-1">
@@ -363,59 +366,68 @@ const Hero = () => {
         </div>
       </div>
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50">
-          <div className="bg-white rounded-2xl p-8 w-[90%] max-w-md shadow-2xl relative">
-            <button
-              onClick={() => setShowPopup(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-black"
-            >
-              ✖
-            </button>
-
-            <h2 className="text-xl font-bold mb-4">Free Consultation</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                className="w-full border rounded-lg p-3"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                required
-                value={formData.phone}
-                onChange={(e) =>
-                  setFormData({ ...formData, phone: e.target.value })
-                }
-                className="w-full border rounded-lg p-3"
-              />
-              <input
-                type="text"
-                placeholder="City"
-                required
-                value={formData.city}
-                onChange={(e) =>
-                  setFormData({ ...formData, city: e.target.value })
-                }
-                className="w-full border rounded-lg p-3"
-              />
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600"
-              >
-                {loading ? "Sending..." : "Submit"}
-              </button>
-            </form>
-
-            {status && <p className="mt-3 text-center">{status}</p>}
-          </div>
-        </div>
-      )}
+        <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50">
+                   {" "}
+          <div className="bg-white rounded-2xl p-8 w-[90%] max-w-md shadow-2xl relative">
+                       {" "}
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black"
+            >
+                            ✖            {" "}
+            </button>
+                       {" "}
+            <h2 className="text-xl font-bold mb-4">Free Consultation</h2>       
+               {" "}
+            <form onSubmit={handleSubmit} className="space-y-4">
+                           {" "}
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
+                className="w-full border rounded-lg p-3"
+              />
+                           {" "}
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                required
+                value={formData.phone}
+                onChange={(e) =>
+                  setFormData({ ...formData, phone: e.target.value })
+                }
+                className="w-full border rounded-lg p-3"
+              />
+                           {" "}
+              <input
+                type="text"
+                placeholder="City"
+                required
+                value={formData.city}
+                onChange={(e) =>
+                  setFormData({ ...formData, city: e.target.value })
+                }
+                className="w-full border rounded-lg p-3"
+              />
+                           {" "}
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600"
+              >
+                                {loading ? "Sending..." : "Submit"}             {" "}
+              </button>
+                         {" "}
+            </form>
+                        {status && <p className="mt-3 text-center">{status}</p>}
+                     {" "}
+          </div>
+                 {" "}
+        </div>
+      )}
       {/* Enhanced Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-orange-400/60 rounded-full flex justify-center bg-black/20 backdrop-blur-sm">
