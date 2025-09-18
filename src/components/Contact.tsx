@@ -9,18 +9,38 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Here you would integrate SMTP.js for email sending
-    // For now, we'll simulate the submission
-    setTimeout(() => {
-      alert('Thank you for your inquiry! We will contact you within 24 hours.');
-      setIsSubmitting(false);
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    }, 1000);
+    setIsSubmitting(true); // Start submitting state
+    setStatus(""); // Clear any previous status message
+
+    try {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-inquiry`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("✅ Message Sent!"); // Success message
+        setFormData({ name: "", email: "", phone: "", message: "" }); // Clear form
+
+        // Reset the button after a delay
+        setTimeout(() => {
+          setIsSubmitting(false);
+          setStatus(""); // Clear status for next submission
+        }, 3000); // 3-second delay
+      } else {
+        setStatus("❌ " + data.error);
+        setIsSubmitting(false); // End submitting on error
+      }
+    } catch (err) {
+      setStatus("❌ Something went wrong!");
+      setIsSubmitting(false); // End submitting on network error
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -38,7 +58,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Ready to harness the power of the sun? Contact us today for a free consultation 
+            Ready to harness the power of the sun? Contact us today for a free consultation
             and customized solar solution for your property.
           </p>
         </div>
@@ -49,7 +69,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-foreground mb-8">
               Contact Information
             </h3>
-            
+
             <div className="space-y-6">
               {/* Phone */}
               <div className="flex items-start gap-4">
@@ -102,14 +122,14 @@ const Contact = () => {
             <div className="mt-8">
               <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
               <div className="flex gap-4">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
                 >
                   <Instagram className="w-5 h-5" />
@@ -123,7 +143,7 @@ const Contact = () => {
             <h3 className="text-xl font-bold text-foreground mb-6">
               Send Us a Message
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -191,10 +211,12 @@ const Contact = () => {
                 disabled={isSubmitting}
                 className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
               >
-                {isSubmitting ? 'Sending...' : (
+                {status ? (
+                  status
+                ) : (
                   <>
-                    <Send className="w-5 h-5" />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {!isSubmitting && <Send className="w-5 h-5" />}
                   </>
                 )}
               </button>
