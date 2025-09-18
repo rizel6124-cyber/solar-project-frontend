@@ -1,4 +1,4 @@
-import { Sun, Facebook, Instagram, Phone, Mail } from 'lucide-react';
+import { Sun, Facebook, Instagram,Linkedin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
@@ -113,16 +113,22 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex gap-4 mt-4 md:mt-0">
             <a 
-              href="#" 
+              href="https://www.facebook.com/profile.php?id=61578029229581&rdid=MCTuOoA11rvSCWZm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17NK3qwTf1%2F#" 
               className="w-8 h-8 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300"
             >
               <Facebook className="w-4 h-4" />
             </a>
             <a 
-              href="#" 
+              href="https://www.instagram.com/rizelgroup/" 
               className="w-8 h-8 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300"
             >
               <Instagram className="w-4 h-4" />
+            </a>
+            <a 
+              href="https://www.linkedin.com/company/rizel-energy-pvt-ltd/" 
+              className="w-8 h-8 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300"
+            >
+              <Linkedin className="w-4 h-4" />
             </a>
           </div>
         </div>
