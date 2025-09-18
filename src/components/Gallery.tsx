@@ -31,9 +31,9 @@ const Gallery = () => {
     },
     {
       src: "/6.jpg",
-      alt: "PMSGY project installation",
-      title: "PMSGY Project",
-      category: "Government",
+      alt: "Industrial solar installation",
+       title: "Industrial Installation",
+       category: "Industrial",
     },
     // {
     //   src: "/8.jpg",
