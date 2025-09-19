@@ -75,7 +75,7 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">Total Installations</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">900+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">1000+</div>
                   <div className="text-sm text-muted-foreground">PMSGY Projects</div>
                 </div>
                 <div className="text-center">

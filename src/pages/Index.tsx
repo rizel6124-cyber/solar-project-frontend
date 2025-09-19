@@ -16,10 +16,12 @@ const Index = () => {
       <Hero />
       <SolarCalculator />
       <Services />
-      <About />
-      <Products />
-      <Achievements />
       <Gallery />
+      
+      <Products />
+      <About />
+      <Achievements />
+      
       <Contact />
       <Footer />
     </div>

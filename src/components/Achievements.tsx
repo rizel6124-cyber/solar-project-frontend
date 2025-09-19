@@ -19,7 +19,7 @@ const Achievements = () => {
     },
     {
       icon: <Star className="w-10 h-10" />,
-      amount: "900+",
+      amount: "1000+",
       title: "PMSGY Installations",
       subtitle: "Successfully completed projects",
       color: "from-orange-400 to-orange-600",
@@ -203,7 +203,7 @@ const Achievements = () => {
           {[
             { label: "Years Experience", value: "5+" },
             { label: "Happy Customers", value: "2500+" },
-            { label: "Mw Installed", value: "3+" },
+            { label: "Mw Installed", value: "25+" },
             { label: "Service Areas", value: "50+" }
           ].map((stat, index) => (
             <div key={index} className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">

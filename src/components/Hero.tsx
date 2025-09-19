@@ -105,7 +105,7 @@ const Hero = () => {
   };
 
   const installations = useCountUp(2500, 2500, 0);
-  const projects = useCountUp(900, 2000, 300);
+  const projects = useCountUp(1000, 2000, 300);
   const subsidy = useCountUp(78, 1800, 600);
 
   return (
@@ -207,12 +207,16 @@ const Hero = () => {
                 </div>
               </button>
 
-              {/* <button className="group relative overflow-hidden bg-transparent border-2 border-orange-500/50 hover:border-orange-400 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 hover:bg-orange-500/10 backdrop-blur-sm">
+              <button onClick={() => {
+                    const calculator = document.getElementById("calculator");
+                    if (calculator)
+                      calculator.scrollIntoView({ behavior: "smooth" });
+                  }} className="group relative overflow-hidden bg-transparent border-2 border-orange-500/50 hover:border-orange-400 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 hover:bg-orange-500/10 backdrop-blur-sm">
                 <div className="relative flex items-center justify-center gap-3">
-                  <span>View Our Services</span>
+                  <span>Calculator</span>
                   <TrendingUp className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-              </button> */}
+              </button>
             </div>
 
             {/* Trust Indicators */}

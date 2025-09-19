@@ -90,7 +90,7 @@ const Footer = () => {
               <div className="text-sm text-white/70">Central Subsidy</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-primary">900+</div>
+              <div className="text-2xl font-bold text-primary">1000+</div>
               <div className="text-sm text-white/70">PMSGY Projects</div>
             </div>
             <div>
@@ -107,7 +107,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-white/70 text-sm">
-            © 2024 Rizel Group. All rights reserved. | Registered PM Surya Ghar Yojana Vendor
+            © 2020 Rizel Group. All rights reserved. | Registered PM Surya Ghar Yojana Vendor
           </div>
           
           {/* Social Links */}

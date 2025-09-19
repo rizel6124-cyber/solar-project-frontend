@@ -21,12 +21,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#ffffff] backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img className="h-16 w-auto" src="logo.png" alt="Logo" />
+            <img className="h-[80px] w-auto" src="logo.png" alt="Logo" />
           </div>
 
           {/* Desktop Nav */}
