@@ -119,7 +119,7 @@ const SolarCalculator = () => {
         ))}
       </div>
 
-      <div className="relative z-10 min-h-screen flex items-center justify-center px-4 py-20">
+      <div className="relative z-10 min-h-screen flex items-center justify-center px-4 py-10">
         <div className="w-full max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             

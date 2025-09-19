@@ -139,9 +139,9 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-1">
         {/* Main Hero Content */}
-        <div className="grid lg:grid-cols-2 gap-20 items-start py-16 min-h-[80vh]">
+        <div className="grid lg:grid-cols-2 gap-5 sm:gap-20 items-start py-16 min-h-[80vh]">
           {/* Left Content Column */}
-          <div className="relative z-10 space-y-8 pt-12">
+          <div className="relative z-10 space-y-8 pt-12 ">
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full backdrop-blur-sm">
               <Award className="w-4 h-4 text-orange-400" />
@@ -207,11 +207,14 @@ const Hero = () => {
                 </div>
               </button>
 
-              <button onClick={() => {
-                    const calculator = document.getElementById("calculator");
-                    if (calculator)
-                      calculator.scrollIntoView({ behavior: "smooth" });
-                  }} className="group relative overflow-hidden bg-transparent border-2 border-orange-500/50 hover:border-orange-400 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 hover:bg-orange-500/10 backdrop-blur-sm">
+              <button
+                onClick={() => {
+                  const calculator = document.getElementById("calculator");
+                  if (calculator)
+                    calculator.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="group relative overflow-hidden bg-transparent border-2 border-orange-500/50 hover:border-orange-400 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 hover:bg-orange-500/10 backdrop-blur-sm"
+              >
                 <div className="relative flex items-center justify-center gap-3">
                   <span>Calculator</span>
                   <TrendingUp className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
@@ -221,7 +224,7 @@ const Hero = () => {
 
             {/* Trust Indicators */}
             <div
-              className={`flex flex-wrap gap-6 pt-6 opacity-0 ${styles.fadeInUp}`}
+              className={`flex flex-wrap gap-0 pt-0 opacity-0 ${styles.fadeInUp}`}
               style={{ animationDelay: "1.2s" }}
             >
               <div className="flex items-center gap-2">
@@ -230,17 +233,11 @@ const Hero = () => {
                   30-Year Warranty
                 </span>
               </div>
-              {/* <div className="flex items-center gap-2">
-                <Zap className="w-5 h-5 text-yellow-400" />
-                <span className="text-sm text-gray-300 font-medium">
-                  Zero Installation Cost
-                </span>
-              </div> */}
             </div>
           </div>
 
           {/* Right Image Column */}
-          <div className="relative pt-8">
+          <div className="relative pt-0  md:pt-8 lg:pt-8 ">
             {/* Main Image Container */}
             <div className="relative group mb-16">
               {/* Subtle glow effect */}
@@ -249,7 +246,8 @@ const Hero = () => {
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-black/50">
                 <img
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  // src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/4/409497815/YH/MA/TR/185429433/adani-solar-panel-500x500.jpg"
                   alt="Modern solar panel installation"
                   className={`w-full h-[480px] object-cover transition-all duration-1000 ${
                     imageLoaded
@@ -263,10 +261,10 @@ const Hero = () => {
             </div>
 
             {/* Floating Cards - Properly Spaced Below Image */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 -mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6  -mt-8">
               {/* Clean Energy Card */}
-              <div className="bg-gradient-to-br from-white/95 to-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/20 transform hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-4">
+              <div className="bg-gradient-to-br from-white/95 to-white/90 p-6  backdrop-blur-sm  rounded-2xl shadow-xl border border-white/20 transform hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center gap-4 ">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-400 rounded-xl flex items-center justify-center shadow-lg">
                     <Sun className="w-6 h-6 text-white" />
                   </div>
@@ -300,7 +298,7 @@ const Hero = () => {
         </div>
 
         {/* Stats Section - Properly Separated */}
-        <div id="stats-section" className="mt-2 mb-20">
+        <div id="stats-section" className="mt-2 mb-10">
           <div className="bg-gradient-to-r from-black/70 via-gray-900/80 to-black/70 backdrop-blur-xl rounded-3xl p-8 sm:p-12 border border-orange-500/20 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
               {/* Stat 1 - Happy Customers */}
@@ -358,7 +356,7 @@ const Hero = () => {
                     ₹{subsidy}K
                   </div>
                   <div className="text-gray-400 font-medium text-lg">
-                    Central Government 
+                    Central Government
                   </div>
                   <div className="text-sm text-gray-500 mt-1">
                     Subsidy Support
@@ -433,11 +431,11 @@ const Hero = () => {
         </div>
       )}
       {/* Enhanced Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-orange-400/60 rounded-full flex justify-center bg-black/20 backdrop-blur-sm">
           <div className="w-1 h-3 bg-gradient-to-b from-orange-400 to-orange-500 rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

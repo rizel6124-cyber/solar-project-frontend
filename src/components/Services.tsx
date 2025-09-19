@@ -74,7 +74,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-white via-orange-50 to-orange-100 relative overflow-hidden">
+    <section id="services" className="py-10 md:py-20 bg-gradient-to-br from-white via-orange-50 to-orange-100 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-orange-200/30 to-orange-300/20 rounded-full blur-3xl animate-pulse"></div>
@@ -105,7 +105,7 @@ const Services = () => {
         </div>
 
         {/* Main Services Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-24">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12 md:mb-24">
           {services.map((service, index) => (
             <div key={index} className="relative group">
               {/* Animated border */}
@@ -146,7 +146,7 @@ const Services = () => {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="relative mb-24">
+        <div className="relative mb-12 md:mb-24">
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-900 rounded-3xl"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-transparent to-orange-500/10 rounded-3xl"></div>
           

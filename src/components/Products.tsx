@@ -47,7 +47,7 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-black relative overflow-hidden">
+    <section id="products" className="py-2 md:py-20 bg-black relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-300"></div>
