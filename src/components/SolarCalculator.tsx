@@ -88,7 +88,7 @@ const SolarCalculator = () => {
     {
       icon: Shield,
       title: "Reliable Power",
-      desc: "25-year performance warranty",
+      desc: "30-year performance warranty",
       gradient: "from-blue-500 to-indigo-600",
     },
   ];
