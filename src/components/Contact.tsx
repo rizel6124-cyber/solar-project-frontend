@@ -227,12 +227,12 @@ const Contact = () => {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/918955556986"
+        href="https://wa.me/9928556986"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-10"
+        className="fixed bottom-6 right-6   text-white rounded-full flex items-center justify-center  z-10"
       >
-        <MessageCircle className="w-7 h-7" />
+        <img src='wplogo.png' className=" hover:scale-110 w-[90px] h-[90px] " />
       </a>
     </section>
   );
