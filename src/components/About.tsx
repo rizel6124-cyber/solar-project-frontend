@@ -94,7 +94,7 @@ const About = () => {
               <div className="space-y-3">
                 {[
                   "Registered vendor in PM Surya Ghar Yojana",
-                  "Among Top 10 solar vendors in Rajasthan", 
+                  "Among Top solar vendors in Rajasthan", 
                   "Top vendor in AVVNL network",
                   "900+ successful PMSGY installations",
                   "₹78,000 central government subsidy processing"
