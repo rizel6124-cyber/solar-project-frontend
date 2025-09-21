@@ -96,7 +96,7 @@ const About = () => {
                   "Registered vendor in PM Surya Ghar Yojana",
                   "Among Top solar vendors in Rajasthan", 
                   "Top vendor in AVVNL network",
-                  "900+ successful PMSGY installations",
+                  "1000+ successful PMSGY installations",
                   "₹78,000 central government subsidy processing"
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-center gap-3">
