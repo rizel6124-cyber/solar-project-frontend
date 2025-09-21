@@ -1,12 +1,21 @@
-import { useState } from 'react';
-import { Phone, Mail, MapPin, Send, Facebook, Instagram, MessageCircle } from 'lucide-react';
+import { useState } from "react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Send,
+  Facebook,
+  Instagram,
+  Linkedin,
+  MessageCircle,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState("");
@@ -17,11 +26,14 @@ const Contact = () => {
     setStatus(""); // Clear any previous status message
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-inquiry`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/send-inquiry`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
@@ -43,10 +55,12 @@ const Contact = () => {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -58,8 +72,8 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Ready to harness the power of the sun? Contact us today for a free consultation
-            and customized solar solution for your property.
+            Ready to harness the power of the sun? Contact us today for a free
+            consultation and customized solar solution for your property.
           </p>
         </div>
 
@@ -77,12 +91,20 @@ const Contact = () => {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Phone Numbers</h4>
+                  <h4 className="font-semibold text-foreground mb-1">
+                    Phone Numbers
+                  </h4>
                   <div className="space-y-1">
-                    <a href="tel:8955556986" className="block text-muted-foreground hover:text-primary transition-colors">
+                    <a
+                      href="tel:8955556986"
+                      className="block text-muted-foreground hover:text-primary transition-colors"
+                    >
                       +91 89555 56986
                     </a>
-                    <a href="tel:9672525744" className="block text-muted-foreground hover:text-primary transition-colors">
+                    <a
+                      href="tel:9672525744"
+                      className="block text-muted-foreground hover:text-primary transition-colors"
+                    >
                       +91 96725 25744
                     </a>
                   </div>
@@ -96,7 +118,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                  <a href="mailto:rizelgroup@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="mailto:rizelgroup@gmail.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     rizelgroup@gmail.com
                   </a>
                 </div>
@@ -108,10 +133,14 @@ const Contact = () => {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Head Office</h4>
+                  <h4 className="font-semibold text-foreground mb-1">
+                    Head Office
+                  </h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    Near SBI Regional Office,<br />
-                    Parshuram Chauraha,<br />
+                    Near SBI Regional Office,
+                    <br />
+                    Parshuram Chauraha,
+                    <br />
                     Udaipur, Rajasthan - 313002
                   </p>
                 </div>
@@ -123,16 +152,22 @@ const Contact = () => {
               <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61578029229581&rdid=MCTuOoA11rvSCWZm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17NK3qwTf1%2F#"
                   className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/rizelgroup/"
                   className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
                 >
                   <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/rizel-energy-pvt-ltd/"
+                  className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
+                >
+                  <Linkedin className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -215,7 +250,7 @@ const Contact = () => {
                   status
                 ) : (
                   <>
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {isSubmitting ? "Sending..." : "Send Message"}
                     {!isSubmitting && <Send className="w-5 h-5" />}
                   </>
                 )}
@@ -230,9 +265,12 @@ const Contact = () => {
         href="https://wa.me/9928556986"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-2   text-white rounded-full flex items-center justify-center  z-10"
+        className="fixed bottom-6 right-6   text-white rounded-full flex items-center justify-center  z-10"
       >
-        <img src='wplogo.png' className=" hover:scale-110 h-[60px] w-[60px] md:w-[90px] md:h-[90px] " />
+        <img
+          src="wplogo.png"
+          className=" hover:scale-110 h-[60px] w-[60px] md:w-[90px] md:h-[90px] "
+        />
       </a>
     </section>
   );
