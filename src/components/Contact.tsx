@@ -230,9 +230,9 @@ const Contact = () => {
         href="https://wa.me/9928556986"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6   text-white rounded-full flex items-center justify-center  z-10"
+        className="fixed bottom-6 right-2   text-white rounded-full flex items-center justify-center  z-10"
       >
-        <img src='wplogo.png' className=" hover:scale-110 w-[90px] h-[90px] " />
+        <img src='wplogo.png' className=" hover:scale-110 h-[60px] w-[60px] md:w-[90px] md:h-[90px] " />
       </a>
     </section>
   );
