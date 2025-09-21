@@ -216,7 +216,7 @@ const Hero = () => {
                 className="group relative overflow-hidden bg-transparent border-2 border-orange-500/50 hover:border-orange-400 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 hover:bg-orange-500/10 backdrop-blur-sm"
               >
                 <div className="relative flex items-center justify-center gap-3">
-                  <span>Calculator</span>
+                  <span className="font-extrabold text-xl">Solar Calculator</span>
                   <TrendingUp className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
               </button>
