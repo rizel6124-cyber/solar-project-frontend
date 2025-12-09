@@ -156,19 +156,19 @@ const Hero = () => {
                 <div
                   className={`block text-white opacity-0 ${styles.slideInUp}`}
                 >
-                  Power Your
+                  Premium Solar Energy
                 </div>
                 <div
                   className={`block text-white opacity-0 ${styles.slideInUp}`}
                   style={{ animationDelay: "0.4s" }}
                 >
-                  Future with
+                  Solutions in
                 </div>
                 <div
                   className={`block bg-gradient-to-r from-orange-400 via-orange-300 to-yellow-400 bg-clip-text text-transparent opacity-0 ${styles.slideInUp}`}
                   style={{ animationDelay: "0.6s" }}
                 >
-                  Solar Energy
+                  Rajasthan
                 </div>
               </h1>
             </div>
@@ -178,15 +178,14 @@ const Hero = () => {
               className={`text-xl text-gray-300 leading-relaxed max-w-lg opacity-0 ${styles.fadeInUp}`}
               style={{ animationDelay: "0.8s" }}
             >
-              Transform your energy future with India's most trusted solar
-              solutions. Experience the perfect blend of{" "}
+              Rizel Energy delivers trusted solar energy solutions in Rajasthan as an approved PM Surya Ghar vendor. With 2500+ installations, we offer reliable systems, expert service,{" "}
               <span className="text-orange-400 font-semibold">
-                cutting-edge technology
+                and subsidy assistance—helping you
               </span>{" "}
               and
               <span className="text-orange-400 font-semibold">
                 {" "}
-                sustainable innovation
+                save up to ₹78,000
               </span>
               .
             </p>
