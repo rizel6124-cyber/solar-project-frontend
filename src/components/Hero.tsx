@@ -156,19 +156,19 @@ const Hero = () => {
                 <div
                   className={`block text-white opacity-0 ${styles.slideInUp}`}
                 >
-                  Premium Solar Energy
+                  Premium
                 </div>
                 <div
                   className={`block text-white opacity-0 ${styles.slideInUp}`}
                   style={{ animationDelay: "0.4s" }}
                 >
-                  Solutions in
+                 Solar Energy
                 </div>
                 <div
                   className={`block bg-gradient-to-r from-orange-400 via-orange-300 to-yellow-400 bg-clip-text text-transparent opacity-0 ${styles.slideInUp}`}
                   style={{ animationDelay: "0.6s" }}
                 >
-                  Rajasthan
+                  Solutions in Rajasthan
                 </div>
               </h1>
             </div>
