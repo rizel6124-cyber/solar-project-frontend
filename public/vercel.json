@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "https://rizelgroup.com/:path*",
-      "destination": "https://www.rizelgroup.com/:path*",
-      "permanent": true
-    }
-  ]
-}
