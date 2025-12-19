@@ -147,31 +147,46 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Social Media */}
-            <div className="mt-8">
-              <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61578029229581&rdid=MCTuOoA11rvSCWZm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17NK3qwTf1%2F#"
-                  className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://www.instagram.com/rizelgroup/"
-                  className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/rizel-energy-pvt-ltd/"
-                  className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-          </div>
+           {/* Social Media */}
+<div className="mt-8">
+  <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
+
+  <div className="flex gap-4">
+    <a
+      href="https://www.facebook.com/profile.php?id=61578029229581&rdid=MCTuOoA11rvSCWZm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17NK3qwTf1%2F#"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit Rizel Group on Facebook"
+      title="Facebook"
+      className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
+    >
+      <Facebook className="w-5 h-5" aria-hidden="true" />
+    </a>
+
+    <a
+      href="https://www.instagram.com/rizelgroup/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit Rizel Group on Instagram"
+      title="Instagram"
+      className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
+    >
+      <Instagram className="w-5 h-5" aria-hidden="true" />
+    </a>
+
+    <a
+      href="https://www.linkedin.com/company/rizel-energy-pvt-ltd/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit Rizel Energy Pvt Ltd on LinkedIn"
+      title="LinkedIn"
+      className="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-lg flex items-center justify-center transition-all duration-300"
+    >
+      <Linkedin className="w-4 h-4" aria-hidden="true" />
+    </a>
+  </div>
+</div>
+</div>
 
           {/* Contact Form */}
           <div className="card-solar">
