@@ -1,4 +1,4 @@
-import { Settings, Wrench, Headphones, Users, Shield, Clock, CheckCircle, Star, Zap } from 'lucide-react';
+import { Settings, Wrench, Headphones, Users, Shield, Clock, CheckCircle, Star, Zap, Home, Building2, Factory } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -23,6 +23,32 @@ const Services = () => {
       features: ["Free Assessment", "Subsidy Guidance", "ROI Analysis"],
       gradient: "from-green-500 to-emerald-500"
     }
+  /* NEW SEO SERVICE CARDS */
+  {
+    icon: <Home className="w-8 h-8" />,
+    title: "Residential Solar Installation",
+    description: "Rooftop solar solutions for homes designed to reduce electricity bills and maximize PM Surya Ghar subsidy benefits.",
+    features: ["Home Rooftop Solar", "Subsidy Assistance", "Net Metering"],
+    gradient: "from-yellow-500 to-orange-500",
+    link: "#residential-solar-udaipur"
+  },
+  {
+    icon: <Building2 className="w-8 h-8" />,
+    title: "Commercial Solar Installation",
+    description: "Customized commercial solar systems for offices, hotels, schools, and institutions in Udaipur.",
+    features: ["Cost Reduction", "High Efficiency", "Quick ROI"],
+    gradient: "from-purple-500 to-indigo-500",
+    link: "#commercial-solar-udaipur"
+  },
+  {
+    icon: <Factory className="w-8 h-8" />,
+    title: "Industrial Solar Installation",
+    description: "High-capacity solar installations for factories and manufacturing units with long-term ROI.",
+    features: ["Large Scale Systems", "Load Optimization", "Scalable Design"],
+    gradient: "from-gray-700 to-gray-900",
+    link: "#industrial-solar-udaipur"
+  }
+    
   ];
 
   const features = [
