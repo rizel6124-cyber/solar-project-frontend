@@ -165,11 +165,25 @@ const Services = () => {
             <h2 className="text-3xl font-bold mb-3">
               Residential Solar Installation in Udaipur Rajasthan
             </h2>
-            <p>
-              Rizel Group provides reliable residential rooftop solar installation
-              services in Udaipur Rajasthan. Our home solar systems help reduce
-              electricity bills while enabling PM Surya Ghar Yojana subsidy benefits.
-            </p>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+  Rizel Group provides reliable residential rooftop solar installation services
+  in Udaipur Rajasthan for independent houses, villas, and apartments.
+  Our home solar solutions are designed to reduce monthly electricity bills
+  while ensuring long-term energy savings and sustainability.
+</p>
+
+<p className="mt-3 text-gray-700 leading-relaxed">
+  As a registered PM Surya Ghar Yojana vendor, we assist homeowners with
+  subsidy processing, net metering approvals, and system commissioning.
+  From site survey to installation and after-sales support, our team ensures
+  a smooth and hassle-free transition to solar energy.
+</p>
+
+<ul className="mt-4 space-y-2 text-gray-700">
+  <li>• Rooftop solar systems for homes in Udaipur</li>
+  <li>• PM Surya Ghar Yojana subsidy assistance</li>
+  <li>• Net metering and DISCOM approvals</li>
+</ul>
           </div>
 
           <div id="commercial-solar-udaipur">
