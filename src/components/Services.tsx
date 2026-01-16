@@ -159,32 +159,47 @@ const Services = () => {
         </div>
 
         {/* ✅ SEO TEXT BLOCK (NO LAYOUT IMPACT) */}
-        <div className="max-w-5xl mx-auto mb-24 space-y-14 text-gray-700">
+      <section id="residential-solar-udaipur" className="py-16">
+  <div className="grid lg:grid-cols-2 gap-10 items-center">
+    
+    {/* LEFT CONTENT */}
+    <div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        Residential Solar Installation in Udaipur Rajasthan
+      </h2>
 
-          <div id="residential-solar-udaipur">
-            <h2 className="text-3xl font-bold mb-3">
-              Residential Solar Installation in Udaipur Rajasthan
-            </h2>
-            <p className="mt-3 text-gray-700 leading-relaxed">
-  Rizel Group provides reliable residential rooftop solar installation services
-  in Udaipur Rajasthan for independent houses, villas, and apartments.
-  Our home solar solutions are designed to reduce monthly electricity bills
-  while ensuring long-term energy savings and sustainability.
-</p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Rizel Group provides reliable residential rooftop solar installation
+        services in Udaipur Rajasthan for homes, villas, and apartments.
+        Our solar systems help homeowners reduce electricity bills while
+        ensuring long-term energy savings.
+      </p>
 
-<p className="mt-3 text-gray-700 leading-relaxed">
-  As a registered PM Surya Ghar Yojana vendor, we assist homeowners with
-  subsidy processing, net metering approvals, and system commissioning.
-  From site survey to installation and after-sales support, our team ensures
-  a smooth and hassle-free transition to solar energy.
-</p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        As a registered PM Surya Ghar Yojana vendor, we assist with subsidy
+        processing, net metering approvals, and complete system installation.
+        Our team manages the entire process from site survey to commissioning.
+      </p>
 
-<ul className="mt-4 space-y-2 text-gray-700">
-  <li>• Rooftop solar systems for homes in Udaipur</li>
-  <li>• PM Surya Ghar Yojana subsidy assistance</li>
-  <li>• Net metering and DISCOM approvals</li>
-</ul>
-          </div>
+      <ul className="space-y-2 text-gray-700">
+        <li>• Rooftop solar systems for homes</li>
+        <li>• PM Surya Ghar Yojana subsidy assistance</li>
+        <li>• Net metering and DISCOM approvals</li>
+      </ul>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div>
+      <img
+        src="/images/residential-solar-udaipur.webp"
+        alt="Residential rooftop solar installation in Udaipur Rajasthan"
+        className="rounded-2xl shadow-lg w-full"
+        loading="lazy"
+      />
+    </div>
+
+  </div>
+</section>
 
           <div id="commercial-solar-udaipur">
             <h2 className="text-3xl font-bold mb-3">
