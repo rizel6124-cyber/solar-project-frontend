@@ -343,6 +343,95 @@ const Services = () => {
           </div>
         </div> */}
       </div>
+      {/* FAQ Section */}
+<div className="max-w-5xl mx-auto mt-20 px-4">
+  <h2 className="text-3xl lg:text-4xl font-bold text-center mb-10 text-gray-900">
+    Frequently Asked Questions – Solar Installation in Rajasthan
+  </h2>
+
+  <div className="space-y-6">
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        Who is eligible for PM Surya Ghar Yojana in Rajasthan?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        Homeowners in Rajasthan with an active residential electricity connection are eligible for PM Surya Ghar Yojana. 
+        The subsidy amount depends on the solar system capacity and DISCOM approval.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        Do you provide PM Surya Ghar subsidy assistance?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        Yes. We provide complete assistance including documentation, subsidy application, and coordination with the 
+        local DISCOM to ensure smooth approval.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        What is the cost of residential solar installation in Rajasthan?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        The cost depends on system size, rooftop space, and component quality. After PM Surya Ghar subsidy, 
+        residential solar systems become highly affordable with fast return on investment.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        How much electricity can rooftop solar generate in Rajasthan?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        A 1kW rooftop solar system can generate approximately 120–150 units per month in Rajasthan 
+        due to excellent solar irradiation.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        Do you install commercial and industrial solar systems?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        Yes. We offer commercial and industrial solar installations for offices, factories, hotels, schools, 
+        and manufacturing units across Rajasthan.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        How long does solar installation take?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        Residential installations typically take 5–7 days. Commercial and industrial projects may vary 
+        depending on system size and approvals.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        What maintenance is required for solar panels?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        Solar systems require minimal maintenance, mainly periodic panel cleaning and basic system checks 
+        to maintain optimal performance.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900">
+        What is the lifespan of a solar power system?
+      </h3>
+      <p className="mt-2 text-gray-700 leading-relaxed">
+        Solar panels typically last 25 years or more, while inverters usually last 8–12 years 
+        depending on usage and quality.
+      </p>
+    </div>
+  </div>
+</div>
+
     </section>
   );
 };
